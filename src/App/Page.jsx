@@ -6,6 +6,10 @@ import Userpage from './User/Userpage'
 import Breadcrumbs from '../Components/Breadcrumbs'
 import AddUser from './User/AddUser'
 import Vendor from './Vendor/Vendor'
+import Addvendor from './Vendor/Addvendor'
+import Employees from './Employee/Enployees'
+import Addemployee from './Employee/Addemployee'
+import Addemployees from './Employee/Addemployee'
 
 const Page = () => {
     return (
@@ -17,6 +21,9 @@ const Page = () => {
         <Route path="/user" element={<Userpage />} />
         <Route path="/adduser" element={<AddUser />} />
         <Route path="/vendor" element={<Vendor />} />
+        <Route path="/addvendor" element={<Addvendor />} />
+        <Route path="/employees" element={<Employees />} />
+        <Route path="/addemployees" element={<Addemployees />} />
     </Routes>
 <Footer />
     </div>

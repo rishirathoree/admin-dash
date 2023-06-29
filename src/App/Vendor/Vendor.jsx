@@ -35,7 +35,7 @@ const Vendor = () => {
           <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-4 sm:grid-cols-1 p-4'>
         
         {/* vendor card */}
-        <div className='p-4 shadow2 bg-blue-200/50 ring-1 ring-black rounded-lg space-y-2'>
+        <div className='p-4 bg-gray-100/40 ring-1 ring-black/10 rounded-lg space-y-2'>
             <div className='flex items-start justify-between'>
                 <div className='flex gap-2'>
                     <div className='w-20 h-20 bg-white rounded-lg shadow2'></div>
@@ -65,7 +65,7 @@ const Vendor = () => {
             </div>
         </div>
 
-        <div className='p-4 shadow2 bg-blue-200/50 ring-1 ring-black rounded-lg space-y-2'>
+        <div className='p-4 bg-gray-100/40 ring-1 ring-black/10 rounded-lg space-y-2'>
             <div className='flex items-start justify-between'>
                 <div className='flex gap-2'>
                     <div className='w-20 h-20 bg-white rounded-lg shadow2'></div>
@@ -95,7 +95,7 @@ const Vendor = () => {
             </div>
         </div>
 
-        <div className='p-4 shadow2 bg-blue-200/50 ring-1 ring-black rounded-lg space-y-2'>
+        <div className='p-4 bg-gray-100/40 ring-1 ring-black/10 rounded-lg space-y-2'>
             <div className='flex items-start justify-between'>
                 <div className='flex gap-2'>
                     <div className='w-20 h-20 bg-white rounded-lg shadow2'></div>
@@ -124,7 +124,7 @@ const Vendor = () => {
                 </div>
             </div>
         </div>
-        <div className='p-4 shadow2 bg-blue-200/50 ring-1 ring-black rounded-lg space-y-2'>
+        <div className='p-4 bg-gray-100/40 ring-1 ring-black/10 rounded-lg space-y-2'>
             <div className='flex items-start justify-between'>
                 <div className='flex gap-2'>
                     <div className='w-20 h-20 bg-white rounded-lg shadow2'></div>
@@ -153,7 +153,7 @@ const Vendor = () => {
                 </div>
             </div>
         </div>
-        <div className='p-4 shadow2 bg-blue-200/50 ring-1 ring-black rounded-lg space-y-2'>
+        <div className='p-4 bg-gray-100/40 ring-1 ring-black/10 rounded-lg space-y-2'>
             <div className='flex items-start justify-between'>
                 <div className='flex gap-2'>
                     <div className='w-20 h-20 bg-white rounded-lg shadow2'></div>
@@ -182,7 +182,7 @@ const Vendor = () => {
                 </div>
             </div>
         </div>
-        <div className='p-4 shadow2 bg-blue-200/50 ring-1 ring-black rounded-lg space-y-2'>
+        <div className='p-4 bg-gray-100/40 ring-1 ring-black/10 rounded-lg space-y-2'>
             <div className='flex items-start justify-between'>
                 <div className='flex gap-2'>
                     <div className='w-20 h-20 bg-white rounded-lg shadow2'></div>
