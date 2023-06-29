@@ -29,11 +29,11 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(25, 25, 249); /* Blue color for the scrollbar thumb */
+    background-color: rgba(181, 181, 181, 0.762); /* Blue color for the scrollbar thumb */
     border-radius: 5px; /* Rounded corners for the scrollbar thumb */
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background-color: darkblue; /* Darker blue color on hover */
+    background-color: rgba(128, 128, 128, 0.5); /* Darker blue color on hover */
   }
   

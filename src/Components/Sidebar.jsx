@@ -23,6 +23,24 @@ const Sidebar = () => {
           title: 'Logistics',
           icon: 'bx bxs-truck',
           url: '/logistics',
+          subcategories: [
+            {
+              title: 'Collect Shipment',
+              url: '/logistics/collect-shipment',
+            },
+            {
+              title: 'Order Delivery',
+              url: '/logistics/order-delivery',
+            },
+            {
+              title: 'Delivery List',
+              url: '/logistics/delivery-list',
+            },
+            {
+              title: 'Shipment Drop',
+              url: '/logistics/shipment-drop',
+            },
+          ],
         },
         {
           title: 'Product',
@@ -56,7 +74,7 @@ const Sidebar = () => {
         <ul className=''>
             {sidebar.map((item,index)=>{
                 return(
-            <Link to={`${item.url}`}><li className={`flex gap-2 items-center p-3  border-b ${location.pathname === item.url ? 'bg-blue-500 ' : ''}`}><i className={`${item.icon} text-blue-500 ${location.pathname === item.url ? 'text-white ' : ''}`}></i><p className={`${location.pathname === item.url ? 'text-white ' : ''} font-lighter text-sm text-blue-500`}>{item.title}</p></li></Link>
+            <Link key={index} to={`${item.url}`}><li className={`flex gap-2 items-center p-3  border-b ${location.pathname === item.url ? 'bg-blue-500 ' : ''}`}><i className={`${item.icon} text-blue-500 ${location.pathname === item.url ? 'text-white ' : ''}`}></i><p className={`${location.pathname === item.url ? 'text-white ' : ''} font-lighter text-sm text-blue-500`}>{item.title}</p></li></Link>
                 )
             })}
         </ul>

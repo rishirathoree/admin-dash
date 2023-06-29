@@ -10,6 +10,7 @@ import Addvendor from './Vendor/Addvendor'
 import Employees from './Employee/Enployees'
 import Addemployee from './Employee/Addemployee'
 import Addemployees from './Employee/Addemployee'
+import FinancialCollection from './FinancialCollection.jsx/FinancialCollection'
 
 const Page = () => {
     return (
@@ -24,6 +25,7 @@ const Page = () => {
         <Route path="/addvendor" element={<Addvendor />} />
         <Route path="/employees" element={<Employees />} />
         <Route path="/addemployees" element={<Addemployees />} />
+        <Route path="/financial" element={<FinancialCollection />} />
     </Routes>
 <Footer />
     </div>

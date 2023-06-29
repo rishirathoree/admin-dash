@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom'
 const Breadcrumbs = () => {
     const location = useLocation()
     const routingArray = location.pathname.split('/')
-    console.log(routingArray)
 
     return (
         <div className='px-8 py-4 w-full flex items-center justify-between'>
