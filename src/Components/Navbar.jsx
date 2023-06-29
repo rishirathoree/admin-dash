@@ -1,10 +1,10 @@
 import React from 'react';
-import calyLogo from '../assets/images/calyLogo.png'
+
 const Navbar = () => {
 
   return (
     <div className='w-full p-4 ring-1 ring-black/5 shadow2 z-[100] justify-between flex items-center'>
-      <img src={calyLogo} alt="" />
+      <p className='font-extrabold text-lg'>Caly</p>
       <div className='flex items-center gap-4'>
         <i className='bx cursor-pointer text-slate-400 bx-bell'></i>
         <div className='profile'>
