@@ -46,6 +46,24 @@ const Sidebar = () => {
       title: 'Product',
       icon: 'bx-sm bx bx-package',
       url: '/product',
+      subcategories: [
+        {
+          title: 'Product',
+          url: '/Product',
+        },
+        {
+          title: 'Brand',
+          url: '/Brand',
+        },
+        {
+          title: 'Section',
+          url: '/Sections',
+        },
+        {
+          title: 'Category',
+          url: '/Category',
+        },
+      ],
     },
     {
       title: 'Orders',
