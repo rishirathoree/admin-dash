@@ -18,14 +18,15 @@ import AddPromotionBanners from './Setting/Promotional Banners/AddPromotionBanne
 import ShippingCharges from './Setting/ShippingCharges/ShippingCharges'
 import Product from './Product/Product/Product'
 import Addproduct from './Product/Product/AddProduct'
-import Employee from './Employee/Employees'
-import AddEmployee from './Employee/AddEmployee'
+
 import Brand from './Product/Brand/Brand'
 import AddBrand from './Product/Brand/AddBrand'
 import Section from './Product/Section/Section'
 import AddSection from './Product/Section/AddSection'
 import AddCategory from './Product/Category/AddCategory'
 import Category from './Product/Category/Category'
+import Employees from './Employee/Enployees'
+import AddEmployee from './Employee/Addemployee'
 
 const Page = () => {
     return (
@@ -38,7 +39,7 @@ const Page = () => {
         <Route path="/adduser" element={<AddUser />} />
         <Route path="/vendor" element={<Vendor />} />
         <Route path="/addvendor" element={<Addvendor />} />
-        <Route path="/employees" element={<Employee />} />
+        <Route path="/employees" element={<Employees />} />
         <Route path="/addemployees" element={<AddEmployee />} />
         <Route path="/financial" element={<FinancialCollection />} />
         <Route path="/change-language" element={<ChangeLanguage />} />
