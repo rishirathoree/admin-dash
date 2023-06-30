@@ -44,14 +44,6 @@ const Addemployees = () => {
 
 </div>
 
-<div className='space-y-6'>
-
-<div className='space-y-4 lg:col-start-1 lg:col-end-4 md:col-start-1 md:col-end-3 sm:col-start-1 col-end-1'>
-<p className='font-medium text-xsm'>Employee Image</p>
-<i className='bx bx-image bx-lg p-12 rounded-lg shadow2 bg-blue-200/20 hover:bg-blue-200/50 duration-500 text-slate-300'></i>
-</div>
-
-</div>
 
 
 {/* form end here */}

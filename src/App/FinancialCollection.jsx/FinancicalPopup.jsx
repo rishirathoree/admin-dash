@@ -16,7 +16,7 @@ const FinancicalPopup = ({ value, setSeeDueAmountValue }) => {
         } overlay`}
         onClick={toggleComponentInvisible}
       >
-        <div  className={`p-4 rounded-lg shadow2 duration-500 space-y-8 ${value ? ' visible translate-y-0 opacity-100' : ' invisible translate-y-8 opacity-0'} w-[30rem] bg-white`}>
+        <div className={`p-4 rounded-lg shadow2 duration-500 space-y-8 ${value ? ' visible translate-y-0 opacity-100' : ' invisible translate-y-8 opacity-0'} w-[30rem] bg-white`}>
           <div className="flex items-center justify-between">
             <p className="font-semibold">
               Due Balance: <span className="text-blue-600 it    alic">{value}</span>

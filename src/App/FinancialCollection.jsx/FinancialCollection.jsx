@@ -24,7 +24,7 @@ const FinancialCollection = () => {
                     </label>
 
                     <label htmlFor="Assign Date" className='w-full'>
-                    <p className='font-semibold text-xsm'>Assign Date</p>
+                    <p className='font-semibold text-xsm'>Assign Date</p>n vkn fvijhngijngivrishi RISHI rATHORRE
                     <input type="date" placeholder='Assign Date' className='w-full text-xsm font-light text-slate-500 focus:outline-none outline-none ring-1 ring-black/5 p-3 rounded' />
                     </label>
 
