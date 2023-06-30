@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Employees = () => {
+const EmployeesList = () => {
     const dummyArray = Array(2).fill(1)
   return (
     <>
@@ -86,4 +86,4 @@ const Employees = () => {
   )
 }
 
-export default Employees
+export default EmployeesList

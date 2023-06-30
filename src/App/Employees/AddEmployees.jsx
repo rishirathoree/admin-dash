@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddEmployee = () => {
+const AddEmployees = () => {
   return (
     <div className='px-8 w-full pb-12 space-y-8'>
         <div className='bg-white shadow2 w-full space-y-4 rounded-lg p-8'>
@@ -57,4 +57,4 @@ const AddEmployee = () => {
   )
 }
 
-export default AddEmployee
+export default AddEmployees

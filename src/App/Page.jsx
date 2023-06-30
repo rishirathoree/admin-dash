@@ -24,8 +24,8 @@ import Section from './Product/Section/Section'
 import AddSection from './Product/Section/AddSection'
 import AddCategory from './Product/Category/AddCategory'
 import Category from './Product/Category/Category'
-import Employees from './Employee/Employees.jsx'
-import AddEmployee from './Employee/AddEmployee.jsx'
+import AddEmployees from './Employees/AddEmployees.jsx'
+import EmployeesList from './Employees/EmployeesList'
 
 const Page = () => {
     return (
@@ -38,8 +38,8 @@ const Page = () => {
         <Route path="/adduser" element={<AddUser />} />
         <Route path="/vendor" element={<Vendor />} />
         <Route path="/addvendor" element={<Addvendor />} />
-        <Route path="/employees" element={<Employees />} />
-        <Route path="/addemployees" element={<AddEmployee />} />
+        <Route path="/employees" element={<EmployeesList />} />
+        <Route path="/addemployees" element={<AddEmployees />} />
         <Route path="/financial" element={<FinancialCollection />} />
         <Route path="/change-language" element={<ChangeLanguage />} />
         <Route path="/change-password" element={<Security />} />
