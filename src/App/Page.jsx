@@ -18,15 +18,14 @@ import AddPromotionBanners from './Setting/Promotional Banners/AddPromotionBanne
 import ShippingCharges from './Setting/ShippingCharges/ShippingCharges'
 import Product from './Product/Product/Product'
 import Addproduct from './Product/Product/AddProduct'
-
 import Brand from './Product/Brand/Brand'
 import AddBrand from './Product/Brand/AddBrand'
 import Section from './Product/Section/Section'
 import AddSection from './Product/Section/AddSection'
 import AddCategory from './Product/Category/AddCategory'
 import Category from './Product/Category/Category'
-import Employees from './Employee/Enployees'
-import AddEmployee from './Employee/Addemployee'
+import Employees from './Employee/Employees.jsx'
+import AddEmployee from './Employee/AddEmployee.jsx'
 
 const Page = () => {
     return (
