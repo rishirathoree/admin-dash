@@ -81,7 +81,7 @@ const AddDriver = () => {
 <button className='px-3 py-2 flex justify-end items-end bg-blue-500 hover:text-white text-sm mt-4 font-semibold rounded ring-1 ring-black/5 text-white hover:shadow-lg'>Save</button>
 <button className='px-3 py-2 flex justify-end items-end text-sm mt-4 font-semibold rounded ring-1 ring-black/5'>Cancel</button>
 </div>
-    </div>
+    </div> 
         
 
     </div>
