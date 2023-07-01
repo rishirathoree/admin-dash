@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  const dropdown = useRef(null);
-  console.log(showDropdown)
-
+  const dropdown = useRef(null)
   return (
     <div className='w-full p-4 ring-1 ring-black/5 shadow2 z-[100] justify-between flex items-center'>
       <p className='font-extrabold text-lg'>Caly</p>

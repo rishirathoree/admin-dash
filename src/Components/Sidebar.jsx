@@ -26,19 +26,19 @@ const Sidebar = () => {
       subcategories: [
         {
           title: 'Collect Shipment',
-          url: '/logistics/collect-shipment',
+          url: '/collect-shipment',
         },
         {
           title: 'Order Delivery',
-          url: '/logistics/order-delivery',
+          url: '/order-delivery',
         },
         {
           title: 'Delivery List',
-          url: '/logistics/delivery-list',
+          url: '/delivery-list',
         },
         {
           title: 'Shipment Drop',
-          url: '/logistics/shipment-drop',
+          url: '/shipment-drop',
         },
       ],
     },
@@ -69,6 +69,20 @@ const Sidebar = () => {
       title: 'Orders',
       icon: 'bx-sm bx bx-shopping-bag',
       url: '/orders',
+      subcategories:[
+        {
+          title:'Collect list',
+          url:'/Collect-list'
+        },
+        {
+          title:'Order List',
+          url:'/Order '
+        },
+        {
+          title:'Return Order',
+          url:'/ReturnOrder'
+        },
+      ]
     },
     {
       title: 'Employees',

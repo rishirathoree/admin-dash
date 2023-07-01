@@ -26,6 +26,14 @@ import AddCategory from './Product/Category/AddCategory'
 import Category from './Product/Category/Category'
 import AddEmployees from './Employees/AddEmployees.jsx'
 import EmployeesList from './Employees/EmployeesList'
+import Collectlist from './Orders/Collect-list/Collectlist'
+import AddOrder from './Orders/Collect-list/AddOrder'
+import Orderlist from './Orders/Orderlist/Orderlist'
+import ReturnOrder from './Orders/ReturnOrder/ReturnOrder'
+import CollectShipment from './Logistics/CollectShipment/CollectShipment'
+import OrderDelivery from './Logistics/OrderDelivery/OrderDelivery'
+import Deliverylist from './Logistics/Deliverylist/Deliverylist'
+import AddDriver from './Logistics/Deliverylist/AddDriver'
 
 const Page = () => {
     return (
@@ -57,6 +65,14 @@ const Page = () => {
         <Route path="/AddSection" element={<AddSection/>} />
         <Route path="/addCategory" element={<AddCategory/>} />
         <Route path="/Category" element={<Category/>} />
+        <Route path="/Collect-list" element={<Collectlist/>} />
+        <Route path="/Add-Order" element={<AddOrder/>} />
+        <Route path="/Order" element={<Orderlist/>} />
+        <Route path="/ReturnOrder" element={<ReturnOrder/>} />
+        <Route path="/collect-shipment" element={<CollectShipment/>} />
+        <Route path="/order-delivery" element={<OrderDelivery/>} />
+        <Route path="/delivery-list" element={<Deliverylist/>} />
+        <Route path="/add-driver" element={<AddDriver/>} />
     </Routes>
 <Footer />
     </div>
