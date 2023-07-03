@@ -36,10 +36,10 @@ const Sidebar = () => {
           title: 'Delivery List',
           url: '/delivery-list',
         },
-        {
-          title: 'Shipment Drop',
-          url: '/shipment-drop',
-        },
+        // {
+        //   title: 'Shipment Drop',
+        //   url: '/shipment-drop',
+        // },
       ],
     },
     {
