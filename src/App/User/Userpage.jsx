@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Userpage = () => {
     const dummyArray = Array(10).fill(1)
@@ -100,8 +101,9 @@ const Userpage = () => {
                     <td className="px-6 py-4">Active</td>
                     <td className="flex items-center px-6 py-8 space-x-3 text-center">
                       <div className="flex gap-4 items-center ">
-                        <i className="bx cursor-pointer bx-sm bx-pencil"></i>
-                        <i className="bx cursor-pointer bx-sm bxs-card"></i>
+                      <i className="bx cursor-pointer bx-sm bx-pencil"></i>
+                        <Link to="/userdetail"><i className="bx cursor-pointer bx-sm bxs-card"></i></Link>
+                        
                       </div>
                     </td>
                   </tr>

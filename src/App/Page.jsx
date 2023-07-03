@@ -34,6 +34,7 @@ import CollectShipment from './Logistics/CollectShipment/CollectShipment'
 import OrderDelivery from './Logistics/OrderDelivery/OrderDelivery'
 import Deliverylist from './Logistics/Deliverylist/Deliverylist'
 import AddDriver from './Logistics/Deliverylist/AddDriver'
+import Userdetail from './User/Userdetail'
 
 const Page = () => {
     return (
@@ -44,6 +45,7 @@ const Page = () => {
         <Route path="/" element={<Home />} />
         <Route path="/user" element={<Userpage />} />
         <Route path="/adduser" element={<AddUser />} />
+        <Route path="/userdetail" element={<Userdetail/>} />
         <Route path="/vendor" element={<Vendor />} />
         <Route path="/addvendor" element={<Addvendor />} />
         <Route path="/employees" element={<EmployeesList />} />
