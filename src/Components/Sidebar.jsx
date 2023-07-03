@@ -138,12 +138,13 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="lg:w-1/6 md:w-1/4 sm:w-2/4 lg:block md:block sm:hidden shadow2 z-50 duration-500 heightPage overflow-y-auto">
+    <aside className="aside-sidebar lg:w-1/6 md:w-1/4 sm:w-2/4 lg:block md:block sm:hidden shadow2 z-50 duration-500 heightPage overflow-y-auto">
       <ul className=''>
         {sidebar.map((category) => (
           <li className="" key={category.title}>
             {category.subcategories ? (
               <div className="dropdown-toggling">
+                <Link to={`${category.subcategories[0].url}`}>
                 <div
                   className={`
                   flex px-4 py-3 border-b border-blue-100/50 items-center  justify-between
@@ -173,6 +174,7 @@ const Sidebar = () => {
                     `}
                   ></i>
                 </div>
+                </Link>
                 <ul
                   className={`duration-500 
                   ${dropdown === category.title ? 'block' : 'hidden'}

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import CollectShipmentModal from '../CollectShipment/CollectShipmentModal'
 const OrderDelivery = () => {
     const dummyArray = Array(2).fill(1)
+    const thisli = useRef()
     const [selectDriver,setSelectDriver] = useState(null)
-    console.log(selectDriver)
   return (
     <>
     <div className='px-8 w-full pb-12 space-y-8'>
@@ -26,6 +26,9 @@ const OrderDelivery = () => {
                     <p className='font-semibold text-xsm'>Order Date</p>
                     <input type="date" className='w-full text-xsm font-light text-slate-500 focus:outline-none outline-none ring-1 ring-black/5 p-3 rounded' />
                     </label>
+
+                           
+                    <li ref={thisli} className='flex border-b border-blue-100/50 items-center gap-2 p-2 pl-12'></li>
                     
                     <div className='flex items-center gap-2 justify-between w-full'>
                     <button className='w-full p-2 bg-blue-600 text-sm mt-4 font-medium rounded ring-1 ring-black/5 text-white hover:shadow-lg'>Filter</button>

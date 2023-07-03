@@ -2,10 +2,28 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  const dropdown = useRef(null)
+  const dropdown = useRef(null);
+
+  useEffect(() => {
+    const handleResizeRemoveClassFromBody = () => {
+      if (window.innerWidth > 300 && document.body.classList.contains('Sidebar-collapse')) {
+        document.body.classList.remove('Sidebar-collapse');
+      }
+    };
+
+    window.addEventListener('resize', handleResizeRemoveClassFromBody);
+
+    return () => {
+      window.removeEventListener('resize', handleResizeRemoveClassFromBody);
+    };
+  }, []);
+
   return (
     <div className='w-full p-4 ring-1 ring-black/5 shadow2 z-[100] justify-between flex items-center'>
-      <p className='font-extrabold text-lg'>Caly</p>
+      <div className='flex items-center gap-1'>
+        <i onClick={() => { document.body.classList.toggle('Sidebar-collapse'); }} className='lg:hidden md:hidden sm:block bx bx-menu bx-sm'></i>
+        <p className='font-extrabold text-lg'>Caly</p>
+      </div>
       <div className='flex items-center gap-4'>
         <i className='bx cursor-pointer text-slate-400 bx-bell'></i>
         <div className='profile relative'>

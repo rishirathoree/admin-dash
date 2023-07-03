@@ -24,7 +24,7 @@ const AddOrder = () => {
 
 {/* form end here */}
 
-<button onClick={()=>console.log('first')} className={`px-3 py-2 flex justify-end items-end bg-blue-500 text-sm mt-4 font-semibold rounded ring-1 ring-black/5 ${vendor ? 'text-white' : 'text-slate-100/50'}`}>Next</button>
+<button className={`px-3 py-2 flex justify-end items-end bg-blue-500 text-sm mt-4 font-semibold rounded ring-1 ring-black/5 ${vendor ? 'text-white' : 'text-slate-100/50'}`}>Next</button>
 
     </div>
         

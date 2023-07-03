@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CollectShipmentModal = ({ driver, setSelectDriver }) => {
-  console.log(driver);
 
   const toggleModalInvisible = (e) => {
     if (e.target.classList.contains('modal')) {

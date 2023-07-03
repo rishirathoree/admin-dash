@@ -1,7 +1,6 @@
 import React from 'react';
 
 const FinancicalPopup = ({ value, setSeeDueAmountValue }) => {
-    console.log(value)
 
   const toggleComponentInvisible = (event) => {
     if (event.target.classList.contains('overlay')) {

@@ -3,7 +3,6 @@ import CollectShipmentModal from './CollectShipmentModal'
 const CollectShipment = () => {
     const dummyArray = Array(2).fill(1)
     const [selectDriver,setSelectDriver] = useState(null)
-    console.log(selectDriver)
   return (
     <>
     <div className='px-8 w-full pb-12 space-y-8'>

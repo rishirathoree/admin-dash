@@ -4,7 +4,6 @@ import FinancicalPopup from './FinancicalPopup'
 const FinancialCollection = () => {
     const dummyArray = Array(1).fill(1)
     const [seeDueAmountValue,setSeeDueAmountValue] = useState(null)
-    console.log(seeDueAmountValue)
   return (
     <>
     <div className='px-8 w-full pb-12 space-y-8'>
