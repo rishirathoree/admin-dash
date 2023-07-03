@@ -75,8 +75,8 @@ const Sidebar = () => {
           url:'/Collect-list'
         },
         {
-          title:'Order List',
-          url:'/Order '
+          title:'Order',
+          url:'/orders'
         },
         {
           title:'Return Order',

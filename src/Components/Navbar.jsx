@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-
+import calylogo from '../assets/images/calylogo.png'
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdown = useRef(null);
@@ -22,7 +22,8 @@ const Navbar = () => {
     <div className='w-full p-4 ring-1 ring-black/5 shadow2 z-[100] justify-between flex items-center'>
       <div className='flex items-center gap-1'>
         <i onClick={() => { document.body.classList.toggle('Sidebar-collapse'); }} className='lg:hidden md:hidden sm:block bx bx-menu bx-sm'></i>
-        <p className='font-extrabold text-lg'>Caly</p>
+        {/* <p className='font-extrabold text-lg'>Caly</p> */}
+        <img src={calylogo} alt="" />
       </div>
       <div className='flex items-center gap-4'>
         <i className='bx cursor-pointer text-slate-400 bx-bell'></i>

@@ -69,7 +69,7 @@ const Page = () => {
         <Route path="/Category" element={<Category/>} />
         <Route path="/Collect-list" element={<Collectlist/>} />
         <Route path="/Add-Order" element={<AddOrder/>} />
-        <Route path="/Order" element={<Orderlist/>} />
+        <Route path="/orders" element={<Orderlist/>} />
         <Route path="/ReturnOrder" element={<ReturnOrder/>} />
         <Route path="/collect-shipment" element={<CollectShipment/>} />
         <Route path="/order-delivery" element={<OrderDelivery/>} />
