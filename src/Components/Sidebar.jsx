@@ -6,22 +6,22 @@ const Sidebar = () => {
     const sidebar = [
     {
       title: 'Dashboard',
-      icon: 'bx-sm bx bxs-dashboard',
+      icon: 'text-lg bx bxs-dashboard',
       url: '/',
     },
     {
       title: 'User',
-      icon: 'bx-sm bx bxs-user-circle',
+      icon: 'text-lg bx bxs-user-circle',
       url: '/user',
     },
     {
       title: 'Vendor',
-      icon: 'bx-sm bx bx-store',
+      icon: 'text-lg bx bx-store',
       url: '/vendor',
     },
     {
       title: 'Logistics',
-      icon: 'bx-sm bx bxs-truck',
+      icon: 'text-lg bx bxs-truck',
       url: '/logistics',
       subcategories: [
         {
@@ -44,7 +44,7 @@ const Sidebar = () => {
     },
     {
       title: 'Product',
-      icon: 'bx-sm bx bx-package',
+      icon: 'text-lg bx bx-package',
       url: '/product',
       subcategories: [
         {
@@ -67,7 +67,7 @@ const Sidebar = () => {
     },
     {
       title: 'Orders',
-      icon: 'bx-sm bx bx-shopping-bag',
+      icon: 'text-lg bx bx-shopping-bag',
       url: '/orders',
       subcategories:[
         {
@@ -86,17 +86,17 @@ const Sidebar = () => {
     },
     {
       title: 'Employees',
-      icon: 'bx-sm bx bx-group',
+      icon: 'text-lg bx bx-group',
       url: '/employees',
     },
     {
       title: 'Financial Collection',
-      icon: 'bx-sm bx bx-money',
+      icon: 'text-lg bx bx-money',
       url: '/financial',
     },
     {
       title: 'Settings',
-      icon: 'bx-sm bx bx-cog',
+      icon: 'text-lg bx bx-cog',
       url: '/settings',
       subcategories: [
         {
@@ -152,14 +152,14 @@ const Sidebar = () => {
                     category.subcategories.some((subcategory) =>
                       routeLocation.includes(subcategory.url)
                     )
-                      ? 'text-white bg-blue-600 hover:bg-blue-600'
+                      ? 'text-white bg-blue-600'
                       : 'text-blue-500 '
                   }
                   `}
                   onClick={() => handleDropdown(category.title)}
                 >
                   <div className='flex  items-center gap-2'>
-                  <i className={`${category.icon}`}></i>
+                  <i className={`${category.icon} opacity-80 `}></i>
                   <p className={`duration-500
                   ${category.subcategories.some((subcategory) => routeLocation.includes(subcategory.url)) ? 'text-xsm font-medium' : 'text-xsm font-medium'}
                   `}>{category.title}</p>
@@ -216,7 +216,7 @@ const Sidebar = () => {
                   items-center justify-between`}
                 >
                   <div className='flex  items-center gap-2'>
-                  <i className={`${category.icon}`}></i>
+                  <i className={`opacity-80 ${category.icon}`}></i>
                   <p className={`duration-500 ${routeLocation === category.url ? 'text-xsm font-medium' : 'text-xsm font-medium'}`}>{category.title}</p>
                   </div>
                 </div>
