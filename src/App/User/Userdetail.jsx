@@ -105,9 +105,8 @@ const Userdetail = () => {
                     </td>
                     <td className="px-6 py-4 cursor-pointer"><p className='w-max'>2023-06-25</p> </td> 
                     <td className="flex items-center px-6 py-8 space-x-3 text-center">
-                      <div className="flex gap-4 items-center ">
-                      <i className="bx cursor-pointer bx-sm bx-pencil"></i>
-                        <Link to="/userdetail"><i className="bx cursor-pointer bx-sm bxs-card"></i></Link>
+                      <div className="flex gap-4 items-center "> 
+                        <Link to="/userorderdetail"><i className="bx cursor-pointer bx-sm bxs-card"></i></Link>
                         
                       </div>
                     </td>
