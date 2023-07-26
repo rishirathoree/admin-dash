@@ -33,7 +33,7 @@ const Cart = () => {
     const dispatch = useDispatch()
 
     useEffect(()=>{
-        if( cartProduct.length + 1){
+        if( cartProduct.length > 0 && cartProduct.length + 1){
             setCartOpen(true)
         }
     },[cartProduct.length])
