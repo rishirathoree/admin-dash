@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import calylogo from '../assets/images/calylogo.png'
+import Cart from './Cart';
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdown = useRef(null);
@@ -26,7 +27,8 @@ const Navbar = () => {
         <img src={calylogo} alt="" />
       </div>
       <div className='flex items-center gap-4'>
-        <i className='bx cursor-pointer text-slate-400 bx-bell'></i>
+      <Cart />
+        {/* <Notifications/> */}
         <div className='profile relative'>
           <div onClick={() => setShowDropdown(!showDropdown)} className='flex cursor-pointer items-center gap-2'>
             <i className='bx bx-user p-2 rounded-full bg-teal-50'></i>

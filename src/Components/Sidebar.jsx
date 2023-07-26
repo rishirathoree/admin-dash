@@ -63,6 +63,10 @@ const Sidebar = () => {
           title: 'Category',
           url: '/Category',
         },
+        {
+          title: 'Product Inventory',
+          url: '/productscreen',
+        },
       ],
     },
     {
@@ -138,7 +142,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="aside-sidebar lg:w-1/6 md:w-1/4 sm:w-2/4 lg:block md:block sm:hidden shadow2 z-50 duration-500 heightPage overflow-y-auto">
+    <aside className="aside-sidebar z-[60] lg:w-1/6 md:w-1/4 sm:w-2/4 lg:block md:block sm:hidden shadow2 duration-500 heightPage overflow-y-auto">
       <ul className=''>
         {sidebar.map((category) => (
           <li className="" key={category.title}>

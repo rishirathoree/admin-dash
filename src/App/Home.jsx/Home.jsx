@@ -1,4 +1,7 @@
 import React from 'react'
+import Barchart from '../../Components/Barchart'
+import Linechart from '../../Components/Linechart'
+import Piechart from '../../Components/Piechart'
 
 const Home = () => {
   return (
@@ -19,6 +22,12 @@ const Home = () => {
         <button className='px-3 py-2 bg-gray-200 text-sm mt-4 font-semibold rounded ring-1 ring-black/5 text-black'>Clear</button>
 
       </div>
+
+      {/* <div className='grid grid-cols-3 gap-4'> */}
+      <Barchart />
+      {/* <Linechart />
+      <Piechart />
+      </div> */}
 
       <div className='grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 gap-8'>
 

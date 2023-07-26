@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Userpage = () => {
     const dummyArray = Array(10).fill(1)
+    
   return (
     <>
     <div className='px-8 w-full pb-12 space-y-8'>

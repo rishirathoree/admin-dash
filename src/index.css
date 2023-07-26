@@ -25,16 +25,16 @@
 /* CSS */
 ::-webkit-scrollbar {
     width: 5px; /* Width of the scrollbar */
-    background-color: rgba(128, 128, 128, 0.1); /* Gray light opacity background */
+    background-color: rgba(128, 128, 128, 0.5); /* Gray light opacity background */
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(181, 181, 181, 0.762); /* Blue color for the scrollbar thumb */
+    background-color: rgba(128, 128, 128, 0.5); /* Blue color for the scrollbar thumb */
     border-radius: 5px; /* Rounded corners for the scrollbar thumb */
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(128, 128, 128, 0.5); /* Darker blue color on hover */
+    background-color: rgba(128, 128, 128, 0.223); /* Darker blue color on hover */
   }
 
   @media (min-width: 300px) {

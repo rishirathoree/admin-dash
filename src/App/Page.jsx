@@ -36,6 +36,7 @@ import Deliverylist from './Logistics/Deliverylist/Deliverylist'
 import AddDriver from './Logistics/Deliverylist/AddDriver'
 import Userdetail from './User/Userdetail'
 import Userorderdetail from './User/Userorderdetail'
+import Productscreen from './Product/Productscreen/Productscreen'
 
 const Page = () => {
     return (
@@ -62,6 +63,7 @@ const Page = () => {
         <Route path="/Add-Promotional-banner" element={<AddPromotionBanners/>} />
         <Route path="/Shipping-charges" element={<ShippingCharges/>} />
         <Route path="/product" element={<Product/>} />
+        <Route path="/Productscreen" element={<Productscreen/>} />
         <Route path="/add-Product" element={<Addproduct/>} />
         <Route path="/Brand" element={<Brand/>} />
         <Route path="/AddBrand" element={<AddBrand/>} />
@@ -76,7 +78,7 @@ const Page = () => {
         <Route path="/collect-shipment" element={<CollectShipment/>} />
         <Route path="/order-delivery" element={<OrderDelivery/>} />
         <Route path="/delivery-list" element={<Deliverylist/>} />
-        <Route path="/add-driver" element={<AddDriver/>} />
+        <Route path="/delivery-list/add-driver" element={<AddDriver/>} />
     </Routes>
 <Footer />
     </div>

@@ -41,7 +41,7 @@ const Breadcrumbs = () => {
             {location.pathname === '/Collect-list' && <Link to="/Add-Order"><button className='px-3 py-2 bg-blue-500 hover:text-white text-sm mt-4 font-medium rounded text-white hover:shadow-lg duration-300'>Add Order</button></Link>}
             {location.pathname === '/collect-shipment' && <Link to="/Add-Order"><button className='px-3 py-2 bg-blue-500 hover:text-white text-sm mt-4 font-medium rounded text-white hover:shadow-lg duration-300'>Add Order</button></Link>}
             {location.pathname === '/Add-Order' && <Link to="/Collect-list"><button className='px-3 py-2 bg-blue-500 hover:text-white text-sm mt-4 font-medium rounded text-white hover:shadow-lg duration-300'>Go to Collect list</button></Link>}
-            {location.pathname === '/delivery-list' && <div className='flex gap-2 items-center'><Link to="/add-driver"><button className='px-3 py-2 bg-blue-500 hover:text-white text-sm mt-4 font-medium rounded text-white hover:shadow-lg duration-300'>Add Driver</button></Link><Link to="/Add-Product"><button className='px-3 py-2 bg-white text-sm mt-4 font-medium rounded hover:shadow-lg duration-300'>Download</button></Link></div>}
+            {location.pathname === '/delivery-list' && <div className='flex gap-2 items-center'><Link to="/delivery-list/add-driver"><button className='px-3 py-2 bg-blue-500 hover:text-white text-sm mt-4 font-medium rounded text-white hover:shadow-lg duration-300'>Add Driver</button></Link><Link to="/Add-Product"><button className='px-3 py-2 bg-white text-sm mt-4 font-medium rounded hover:shadow-lg duration-300'>Download</button></Link></div>}
         </div>
     )
 }
