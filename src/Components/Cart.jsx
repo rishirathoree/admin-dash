@@ -4,11 +4,12 @@ import tee2 from '../assets/images/tee2.jpg'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeItemFromCart } from '../Store/slices/Cart'
 import noitemgif from '../assets/images/noitemgif.gif'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Cart = () => {
     
     const [cartOpen,setCartOpen] = useState(false)
+    const location = useLocation()
     const cartListBox = useRef(null)
     const removeByClickingOverlay = (e) => {
         if (cartListBox.current && e.target.classList.contains('overlay')) {
@@ -64,7 +65,7 @@ const Cart = () => {
             <div className={`flex items-center flex-col justify-center select-none duration-100 ${cartProduct.length > 0 ? 'opacity-0' : 'opacity-100'}`}>
                 <img src={noitemgif} className='w-full h-full' alt="" />
                 <p className='font-semibold text-gray-400/20 text-xsm'>No Items Added As Such Now!!</p>
-                <Link to="/productscreen"><p className='cursor-pointer font-semibold hover:text-blue-500/50 text-blue-500/90 underline text-xsm'>Add Product!!</p></Link>
+                {location.pathname !== '/productscreen' && <Link to="/productscreen"><p className='cursor-pointer font-semibold hover:text-blue-500/50 text-blue-500/90 underline text-xsm'>Add Product!!</p></Link>}
             </div>
             }
             </div>

@@ -180,9 +180,10 @@ const Sidebar = () => {
                 </div>
                 </Link>
                 <ul
-                  className={`duration-500 
-                  ${dropdown === category.title ? 'block' : 'hidden'}
+                  className={`
+                  ${dropdown === category.title ? 'duration-1000 max-h-80 visible' : 'duration-300 invisible max-h-0'} 
                   `}
+                  // this max height makes the animation visible only when we use the max h else if you give the height full it wont show growing height animation
                 >
                   {category.subcategories.map((subcategory) => (
                     <Link to={subcategory.url} key={subcategory.title}>
